@@ -18,7 +18,7 @@ CLI application that takes commands to add, update and delete tasks. Tasks will 
 ## Prerequisites
 
 - Java 21 (or later)
-- No need to install Maven separately — the project includes the Maven Wrapper (`mvnw`)
+- No need to install Maven separately → the project includes the Maven Wrapper (`mvnw`)
 
 ## Installation 
 ````bash
@@ -27,6 +27,7 @@ cd cli-task-tracker
 ````
 
 ## Running the Application
+Run it using the Maven Wrapper:
 ````bash
 ./mvnw compile exec:java
 ````
