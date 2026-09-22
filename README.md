@@ -39,19 +39,19 @@ Once running you will see a `>` prompt. Available commands:
 task-cli --help
 
 # Adding a new task
-task-cli add "{description}"
+task-cli add "<description>"
 
 # Updating a task
-task-cli update {id} "{new description}"
+task-cli update <id> "<new description>"
 
 # Deleting a task
-task-cli delete {id}
+task-cli delete <id>
 
 # Marking a task as in progress
-task-cli mark-in-progress {id}
+task-cli mark-in-progress <id>
 
 # Marking a task as done
-task-cli mark-done {id}
+task-cli mark-done <id>
 
 # Listing all tasks
 task-cli list
