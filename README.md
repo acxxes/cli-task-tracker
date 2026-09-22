@@ -1,36 +1,48 @@
 # CLI Task Tracker
-CLI application that takes commands to add, update and delete tasks. Tasks will be saved as a JSON file. The JSON file will be saved on the projects root folder.
+CLI application that takes commands to add, update and delete tasks. Tasks will be saved as a JSON file when executing the JSON command. The JSON file will be saved on the projects root folder.
 
 ## Features 
-- **Add Task:** Adds a new task with a description, status, creation/update date and an id.
-- **Update Task:** Updates the created tasks.
-- **Delete Task:** Deletes the created tasks.
-- **Mark Task:** Marks the tasks as "in-progress", "done" or back to "todo".
-- **List Task:** Lists all tasks, all tasks marked as "in-progress", "done" or "todo".
+- **Add Task:** Adds a new task with a description, status, creation/update date and an id
+- **Update Task:** Edit an existing task's description
+- **Delete Task:** Remove a task
+- **Mark Task:** Change a task's status to todo, in-progress, or done
+- **List Tasks:** View all tasks, or filter by status
+- **Export to JSON:** Save the current task list to `tasks.json` in the project root (manual; see command below)
+
+## Tech Stack
+
+- Java 21 
+- Gson (JSON serialization)
+- Maven
+
+## Prerequisites
+
+- Java 21 (or later)
+- No need to install Maven separately — the project includes the Maven Wrapper (`mvnw`)
 
 ## Installation 
-
-**Clone the repository:**
-````
-bash
-git clone https://github.com/AcxesLo/cli-task-tracker.git
+````bash
+git clone https://github.com/acxxes/cli-task-tracker.git
 cd cli-task-tracker
 ````
-**Run the application:**
-````
-task-cli <command> {argument}
-````
 
+## Running the Application
+````bash
+./mvnw compile exec:java
+
+````
+or run the `Main` class from your IDE
 ## Usage
+Once running you will see a `>` prompt. Available commands:
 ````
 # Listing all commands
 task-cli --help
 
 # Adding a new task
-task-cli add "{argument}"
+task-cli add "{description}"
 
 # Updating a task
-task-cli update {id} "{argument}"
+task-cli update {id} "{new description}"
 
 # Deleting a task
 task-cli delete {id}
@@ -49,10 +61,10 @@ task-cli list todo
 task-cli list in-progress
 task-cli list done
 
-# Create JSON file
+# Create/Write JSON file
 write json
 
-# Exit application
+# Exit the application
 exit
 ````
 ## Credits

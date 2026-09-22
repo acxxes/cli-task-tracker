@@ -8,7 +8,7 @@ public class Main {
     //TODO
     // ~
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         TaskService.taskCLILogic();
     }
 }
