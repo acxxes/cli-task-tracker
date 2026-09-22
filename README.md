@@ -68,5 +68,5 @@ write json
 exit
 ````
 ## Credits
-Project idea from: https://roadmap.sh/projects/task-tracker
+Project idea from https://roadmap.sh/projects/task-tracker
 
