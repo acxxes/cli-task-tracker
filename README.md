@@ -10,13 +10,11 @@ CLI application that takes commands to add, update and delete tasks. Tasks will 
 - **Export to JSON:** Save the current task list to `tasks.json` in the project root (manual; see command below)
 
 ## Tech Stack
-
 - Java 21 
 - Gson (JSON serialization)
 - Maven
 
 ## Prerequisites
-
 - Java 21 (or later)
 - No need to install Maven separately → the project includes the Maven Wrapper (`mvnw`)
 
@@ -68,6 +66,7 @@ write json
 # Exit the application
 exit
 ````
+
 ## Credits
 Project idea from https://roadmap.sh/projects/task-tracker
 
