@@ -33,7 +33,7 @@ Or run the `Main` class from your IDE.
 
 ## Usage
 Once running you will see a `>` prompt. Available commands:
-````
+````bash
 # Listing all commands
 task-cli --help
 
