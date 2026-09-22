@@ -31,7 +31,7 @@ Run it using the Maven Wrapper:
 ````bash
 ./mvnw compile exec:java
 ````
-or run the `Main` class from your IDE.
+Or run the `Main` class from your IDE.
 
 ## Usage
 Once running you will see a `>` prompt. Available commands:
